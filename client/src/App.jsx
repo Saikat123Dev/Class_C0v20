@@ -9,6 +9,7 @@ import NoteSection from './components/Notes';
 import QuizSection from './StudentDashboard/QuizSection';
 import Assignments from './StudentDashboard/Assignment';
 import AssignmentUpload from './TeacherComponents/AssignmentUpload';
+import Vocab from './VocabChallenge/Vocab';
 
 
 function App() {
@@ -19,8 +20,10 @@ function App() {
       <Routes>
       <Route path="/Teach" element={<Teacher/>} />
       <Route path="/uploadAssign" element={<AssignmentUpload/>}/>
+      <Route path="/Voca" element={<Vocab/>}/>
       <Route/>
         <Route path="/" element={<Component/>}/>
+       
         <Route path="/Stud" element={<Student/>} />
         <Route path="/notes" element={<NoteSection/>}/>
         <Route path="/quiz" element={<QuizSection/>}/>

@@ -46,6 +46,12 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
           </a>
         </li>
         <li className='sidebar-list-item'>
+          <a href="/Voca">
+            <BsGrid1X2Fill className='icon' />
+            Word Challenge
+          </a>
+        </li>
+        <li className='sidebar-list-item'>
           <a href="/update-profile">
             <BsMenuButtonWideFill className='icon' />
             Update Profile
