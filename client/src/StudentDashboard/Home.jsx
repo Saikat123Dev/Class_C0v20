@@ -22,7 +22,7 @@ function Home() {
   const cardStyle = {
     ...divStyle,
     background: '#2f2f2f', 
-    color: '#fff', 
+
     borderRadius: '8px', 
     padding: '20px', 
     display: 'flex',
@@ -50,11 +50,11 @@ function Home() {
       </div>
 
       <div className="main-cards">
-        <div className="card bg-blue-300 dark-card shadow-lg" style={{ ...cardStyle, ...(isHovered && cardHoverStyle) }}
+        <div className="card bg-blue-300 dark-card shadow-lg" style={{ ...cardStyle, ...(isHovered && cardHoverStyle),  }}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <div className="bg-gray-800 rounded-lg p-5 flex flex-col justify-center items-center shadow-lg" style={{ ...cardStyle, background: '#2c2c2c', color: '#fff' }}>
+          <div className="bg-gray-800 rounded-lg p-5 flex flex-col justify-center items-center shadow-lg" style={{ ...cardStyle, background: '#2c2c2c', color: 'aqua' }}>
             <BsFillTrophyFill className="card_icon text-4xl ml-auto text-yellow-500" />
             <h2 className="text-3xl font-bold">56</h2>
             <h2>Total Trophy Earned </h2> 
@@ -65,7 +65,7 @@ function Home() {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <div className="bg-gray-800 rounded-lg p-5 flex flex-col justify-center items-center shadow-lg" style={{ ...cardStyle, background: '#2c2c2c', color: '#fff' }}>
+          <div className="bg-gray-800 rounded-lg p-5 flex flex-col justify-center items-center shadow-lg" style={{ ...cardStyle, background: '#2c2c2c', color: 'aqua' }}>
             <GiLevelFour className="card-icon text-4xl ml-auto text-blue-500" />
             <h2 className="text-3xl font-bold">3</h2>
             <h2>Total Badges Earned </h2> 
@@ -76,7 +76,7 @@ function Home() {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <div className="bg-gray-800 rounded-lg p-5 flex flex-col justify-center items-center shadow-lg" style={{ ...cardStyle, background: '#2c2c2c', color: '#fff' }}>
+          <div className="bg-gray-800 rounded-lg p-5 flex flex-col justify-center items-center shadow-lg" style={{ ...cardStyle, background: '#2c2c2c', color: 'aqua' }}>
             <FaNoteSticky className="text-4xl ml-auto text-green-500" />
             <h2 className="text-3xl font-bold">36</h2>
             <h2>Private Notes / Public Notes </h2> 
